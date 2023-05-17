@@ -33,5 +33,91 @@ body {
   max-width: 123.4rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding: 1.5rem;
 }
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  /* display: inline-block; */
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.838rem;
+  padding-bottom: 2.514rem;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+/* Nav logo */
+.nav-logo {
+  font-family: var(--merienda-font);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.83446rem;
+  line-height: 4.5rem;
+}
+/* Individual links */
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: var(--black-basic-color);
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--secondary-color);
+}
+.nav-ctas {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+  justify-content: center;
+}
+
+.nav-link.nav-cta:link,
+.nav-link.nav-cta:visited {
+  background-color: var(--primary-color);
+  transition: all 0.3s;
+  color: var(--white-color);
+}
+.nav-link.nav-cta:hover,
+.nav-link.nav-cta:active {
+  background-color: var(--secondary-color);
+}
+.login-cta {
+  border-radius: 225px;
+  padding: 1.2rem 5rem;
+  font-size: 2rem;
+  line-height: 34px;
+}
+.cart-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99.9rem;
+  padding: 1.2rem;
+}
+/* en link start */
+.nav-en-link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.nav-en-link span svg {
+  height: 0.8rem;
+  width: 1.358rem;
+}
+/* en link end */
