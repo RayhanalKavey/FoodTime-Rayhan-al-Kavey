@@ -1,0 +1,29 @@
+/* ===============
+General CSS
+================== */
+:root {
+  --white-color: #ffffff;
+  --paragraph-color: #676767;
+  --black-basic-color: #3f3f3f;
+  --disable-color: #c7c7c7;
+  --low-highlighted-color: #9f9f9f;
+  --primary-color: #396c03;
+  --primary-color-bg: hsla(89, 37%, 41%, 0.1);
+  --secondary-color: #ff8b00;
+  --secondary-color-bg: rgba(255, 140, 0, 0.05);
+  --poppins-font: "Poppins", sans-serif;
+  --merienda-font: "Merienda", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--poppins-font);
+}
