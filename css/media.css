@@ -49,6 +49,42 @@ with 1344px (Smaller desktop)
     align-items: center;
     text-align: center;
   }
+  /* Navbar */
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.884);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    gap: 5rem;
+    flex-direction: column;
+    /* hide nav items*/
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-nav-menu .open-menu {
+    display: none;
+  }
+  .nav-open .icon-nav-menu .close-menu {
+    display: block;
+  }
+  .nav-link {
+    font-size: 3rem;
+  }
+  .icon-nav-menu {
+    display: block;
+  }
 }
 /* 
 672px

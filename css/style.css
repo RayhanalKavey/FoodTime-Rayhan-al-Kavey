@@ -22,6 +22,7 @@ General CSS
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -42,7 +43,22 @@ li {
   list-style: none;
   /* display: inline-block; */
 }
-/* Navbar */
+/*===============
+ Navbar
+ ================ */
+.main-header {
+  border-bottom: 1px solid #3f3f3f20;
+  position: relative;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 11.2rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.884);
+  z-index: 100;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0, 03);
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -121,3 +137,20 @@ li {
   width: 1.358rem;
 }
 /* en link end */
+.icon-nav-menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  z-index: 60;
+}
+.icon-navigation {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--black-basic-color);
+}
+.icon-navigation.open-menu {
+}
+.icon-navigation.close-menu {
+  display: none;
+}

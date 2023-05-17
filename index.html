@@ -26,11 +26,13 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
-    <header>
+    <!-- nav-open class will add and remove from here -->
+    <header class="main-header sticky">
       <nav class="container navbar">
         <div>
           <a class="nav-logo" href="#">FoodTime</a>
         </div>
+
         <!-- <div class="nav-items"> /// ///-->
         <ul class="nav-links">
           <li><a class="nav-link" href="#">Home</a></li>
@@ -72,6 +74,39 @@
           </li>
         </ul>
         <!-- Nav items end -->
+        <!-- Mobile menu -->
+        <button class="icon-nav-menu">
+          <!-- Hamburger menu -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon-navigation open-menu ionicon"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M80 160h352M80 256h352M80 352h352"
+            />
+          </svg>
+          <!-- CLose button -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon-navigation close-menu ionicon"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </button>
       </nav>
     </header>
     <!-- ---------------
@@ -148,7 +183,8 @@
       </div>
     </section>
     <!-- ---------------
-      Food section Start
+      Food section end
     --------------- -->
+    <script src=" script.js"></script>
   </body>
 </html>

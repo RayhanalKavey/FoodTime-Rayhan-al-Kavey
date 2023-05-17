@@ -4,6 +4,7 @@ Hero section
 .section-hero {
   background-color: var(--primary-color-bg);
   position: relative;
+  margin-top: 11.2rem;
 }
 /* background image start */
 .hero-background {
@@ -58,8 +59,7 @@ Hero section
   border: 2px solid var(--primary-color);
   border-radius: 120px;
 }
-.btn {
-}
+
 .search-button {
   padding: 1.5rem 5rem;
   background-color: var(--primary-color);
