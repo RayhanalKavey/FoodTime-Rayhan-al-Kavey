@@ -4,6 +4,7 @@
 .food-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* gap: 1rem; */
   /* align-items: center;
   justify-content: center; */
   padding-top: 14.5rem;
@@ -40,19 +41,19 @@
   padding: 15px 60px;
 }
 .food-img {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
-  width: 100%;
-  height: 100%;
+  justify-content: center;
+  /* width: 100%;
+  height: 100%; */
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .city {
-  width: 100%;
-  height: 100%;
-
+  width: 80%;
+  /* height: 100%; */
+  position: relative;
   animation: city 3s linear infinite;
 }
 @keyframes city {
@@ -60,10 +61,11 @@
     transform: translateX(-60px);
   }
 }
+
 .bike {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  width: 95%;
+  top: -50px;
   animation: bike 3s linear infinite;
 }
 @keyframes bike {
