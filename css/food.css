@@ -1,0 +1,12 @@
+.food-section {
+  background-color: var(--secondary-color-bg);
+}
+.food-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.food-heading {
+}
+.food-img {
+  width: 100%;
+}

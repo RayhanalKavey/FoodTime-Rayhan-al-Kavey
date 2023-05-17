@@ -1,16 +1,50 @@
+/* ===============
+Media screen
+================== */
 /* 
 with 1344px (Smaller desktop)
 */
 @media (max-width: 84em) {
+  html {
+    font-size: 55.5%;
+  }
 }
 /* 
 992px
 */
 @media (max-width: 62em) {
+  html {
+    font-size: 50.5%;
+  }
+  /* Hero section */
+  .hero-container {
+    grid-template-columns: 1fr;
+    padding-top: 6.5rem;
+    padding-bottom: 1.4rem;
+  }
+  .hero-heading {
+    font-size: 4.5rem;
+    line-height: 6.4rem;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-description {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.4rem;
+  }
+  /* hero section end */
 }
 /* 
 672px
 
 */
 @media (max-width: 42em) {
+  html {
+    font-size: 45.5%;
+  }
+}
+
 }
